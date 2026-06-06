@@ -1,0 +1,18 @@
+# Environment variables — NEVER commit these!
+.env
+*.env
+
+# Credentials
+credentials.json
+token.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+package-lock.json
+
+# Logs
+*.log

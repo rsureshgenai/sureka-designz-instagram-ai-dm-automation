@@ -1,0 +1,35 @@
+{
+  "name": "Sureka Designz Instagram AI DM Full",
+  "note": "Export your workflow from n8n and replace this file. Steps: n8n → Your Workflow → Top right menu (3 dots) → Export → Save as workflow.json",
+  "how_to_export": [
+    "1. Open n8n",
+    "2. Open your Instagram DM workflow",
+    "3. Click the 3 dots menu (top right)",
+    "4. Click Export",
+    "5. Save the file as workflow.json",
+    "6. Replace this file with the exported file",
+    "7. IMPORTANT: Remove all credential IDs before uploading to GitHub"
+  ],
+  "nodes": [
+    "Instagram Webhook Verify (GET)",
+    "Handle Verification",
+    "Verify Response",
+    "Instagram Webhook (POST)",
+    "Extract Message",
+    "Read History (Google Sheets)",
+    "Build Messages with History (Code)",
+    "Groq AI Reply (HTTP Request)",
+    "Parse AI Reply (Code)",
+    "Save User Message (Google Sheets)",
+    "Save AI Reply (Google Sheets)",
+    "Send Instagram Reply (HTTP Request)",
+    "Send Email (Gmail)",
+    "Webhook Response"
+  ],
+  "credentials_needed": [
+    "Google Sheets account",
+    "Groq API key (Header Auth)",
+    "Gmail account",
+    "Instagram Graph API token"
+  ]
+}
